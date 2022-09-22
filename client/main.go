@@ -22,7 +22,7 @@ var _ironMan = movieService.MovieInfo{
 	},
 	Imdb: 7.9,
 }
-var _endaGame = movieService.MovieInfo{
+var _endGame = movieService.MovieInfo{
 	Title: "Avengers Endgame",
 	Director: &movieService.Director{
 		FirstName: "Ruso",
@@ -74,7 +74,7 @@ func main() {
 
 	runGetMovies(client)
 	runCreateMovies(client, &_ironMan)
-	runCreateMovies(client, &_endaGame)
+	runCreateMovies(client, &_endGame)
 	runCreateMovies(client, &_spiderMan)
 	runCreateMovies(client, &_doctorStrange)
 	runGetMovies(client)

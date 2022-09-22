@@ -1,9 +1,15 @@
-#### run all the commands from checked-out project directory
-###### fetch all the dependencies by running the following command
+# How to run
+
+## Run all the commands from checked-out project directory
+
+### Fetch all the dependencies by running the following command
+
 ```shell
 go mod tidy
 ```
-###### run the following command to resolve module dependencies
+
+### Run the following command to resolve module dependencies
+
 ```shell
 protoc --proto_path=. \
 --go_out=. \
@@ -15,12 +21,14 @@ protoc --proto_path=. \
 protos/*.proto
 ```
 
-###### run the following command to start the server
+### Run the following command to start the server
+
 ```shell
 go run server/main.go
 ```
 
-###### run the following command to start the client
+### Run the following command to start the client
+
 ```shell
 go run client/main.go
 ```
